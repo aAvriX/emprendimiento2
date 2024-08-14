@@ -1,0 +1,442 @@
+:root {
+    --blanco: #fff;
+    --negro: #000;
+    --colorPrincipal: #45b8b8;
+    --colorPricnipalOsc: #177272;
+    --colorSecunadario: #dc2b30;
+    --colorSecundarioOsc:#6e0105;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 3rem;
+    color: var(--colorPricnipalOsc);
+
+}
+header h1 {
+    font-family: arial;
+    font-size: 2rem;
+    color: var(--colorPricnipalOsc);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header img {
+    width: 10rem;
+    margin-left: 45%;
+    align-items: center;
+    justify-content: center;
+} 
+
+.navegacion {
+    background-color: var(--colorPrincipal);
+    margin-top: 1rem;
+    height: 2.5rem;
+    text-align: center;
+}
+
+.navegacion a {
+    font-family: helvetica;
+    font-size: 2.2rem;
+    text-decoration: none;
+    color: var(--blanco);
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.navegacion a:hover {
+    background-color: var(--colorPricnipalOsc);
+    color: var(--blanco);
+    font-weight: bold;
+    border-radius: 1rem;
+    cursor: pointer;
+
+}
+
+
+.carousel {
+    margin-top: 1rem;
+    margin-left: 34%;
+    position: relative;
+    width: 65%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.descripcion-carrousel {
+    text-align: center;
+    color: var(--negro);
+    font-weight: bold;
+    padding-top: 10px;
+    font-family: arial;
+    font-size: 1.5rem;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilos para la sección Nosotros */
+.nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: var(--blanco);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-top: 1.8rem;
+    
+  }
+  
+  .texto {
+    flex: 1;
+    margin-right: 20px;
+  
+  }
+  
+  .texto h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: arial;
+    font-weight: bold;
+  }
+  
+  .texto p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    font-family: 'Arial Narrow';
+    padding: 1rem;
+    text-align: justify;
+
+   
+  }
+  /*Botones de contacto */
+  .contacto {
+    margin-top: 20px;
+  }
+  
+  .contacto .btn {
+    display: inline-block;
+    background-color: var(--secundario-claro);
+    color: var(--blanco);
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .contacto .btn:hover {
+    background-color: var(--secundario-claro);
+  }
+  
+  .imagen {
+    flex: 1;
+  }
+  
+  .imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Estilos para el mapa */
+  .mapa {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .mapa h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .google-maps {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Estilos para los productos */
+.productos {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .productos h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  .producto {
+    background-color: var(--blanco);
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .producto:hover {
+    transform: scale(1.05);
+  }
+  
+  .producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .producto h3 {
+    font-size: 1.5rem;
+    color: var(--oscuro); 
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .producto p {
+    font-size: 1.2rem;
+    color: var(--secundario-claro); 
+  }
+  .producto-detalle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    gap: 20px;
+    height: 90%;
+  }
+  
+  .producto-imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.8);
+  }
+  
+  .producto-info {
+    background-color: var(--blanco);
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0  6px 1px rgba(0, 0, 0, 0.5);
+    
+  }
+  
+  .producto-info h2 {
+    font-size: 2rem;
+    color: var(--negro);
+    margin-bottom: 10px;
+
+  }
+  
+  .producto-info p {
+    font-size: 1.2rem;
+    color: var(--negro);
+    margin-bottom: 20px;
+    font-family: arial;
+  }
+  
+  .opciones-producto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .opcion-cantidad,
+  .opcion-color {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+  .opcion-cantidad label,
+  .opcion-color label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--negro);
+    font-family: arial;
+  }
+  
+  .opcion-cantidad input,
+  .opcion-color select {
+    padding: 5px;
+    border: 1px solid var(--colorPrincipal);
+    border-radius: 5px;
+  }
+  
+  .boton-comprar {
+    background-color: var(--colorPricnipalOsc);
+    color: var(--blanco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .boton-comprar:hover {
+    background-color: var(--colorSecundarioOsc);
+    color: #fff;
+  }
+
+/* Estilo contactos */
+.contactos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;  
+  flex-wrap: wrap;  
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: var(--blanco);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-top: 1.8rem;
+}
+
+.contenedor-contactos {
+  background-color: var(--blanco);
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.textos {
+  text-align: left;
+}
+
+.tex
+
+
+.metodos-contacto {
+  margin-bottom: 20px;
+}
+
+.metodos-contacto p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color:var(--negro);
+}
+
+.formulario-contacto {
+  width: 100%;
+}
+
+.campos {
+  margin-bottom: 20px;
+}
+
+.campos label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color:var(--negro);
+}
+
+.campos input[type="text"],
+.campos input[type="email"],
+.campos textarea {
+  font-family: Arial;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--colorPricnipalOsc);
+  border-radius: 5px;
+  font-size: 1rem;
+  color:var(--oscuro);
+}
+
+.campos input[type="submit"] {
+  background-color: var(--colorPricnipalOsc);
+  color:var(--blanco);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.campos input[type="submit"]:hover {
+  background-color: var(--colorPrincipal);
+}
+  footer {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 2rem;
+    font-family: arial;
+  }
