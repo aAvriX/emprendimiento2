@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utzuujinel Reposteria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icono.PNG">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+            <img src="img/icono.PNG" alt="Logo de la Empresa">
+            </a>
+        </div>
+    </header>
+
+    <nav class="navegacion">
+            <a  href="index.html">Tienda</a>
+            <a  href="nosotros.html">Nosotros</a>        
+    </nav>
+
+    </section>
+    <section class="producto-detalle">
+        <div class="producto-imagen">
+            <img src="img/pan.jpg" alt="Producto" width="400" height="400">
+        </div>
+        <div class="producto-info">
+            <h2>Panes</h2>
+            <p>Q150.00</p>
+            <p>Descripción breve del producto aquí.</p>
+            
+            <div class="opciones-producto">
+                <div class="opcion-cantidad">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1">
+                </div>
+                <div class="opcion-color">
+                    <label for="color">Clase de Pan</label>
+                    <select id="color" name="color">
+                        <option value="rojo">Dulce</option>
+                        <option value="azul">Pirujo</option>
+                        <option value="verde">Bollos</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="boton-comprar">Añadir al Carrito</button>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Venta de Pan, Postres y Dulces. Todos los derechos reservados.</p>       
+    </footer>
+</body>
+</html>
